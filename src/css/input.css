@@ -5,6 +5,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'AGRANDIR-wide';
-    src: url('assets/fonts/AGRANDIR.ttf');
+  font-family: 'AGRANDIR-wide';
+  src: url('assets/fonts/AGRANDIR.woff2') format('woff2'),
+       url('assets/fonts/AGRANDIR.woff') format('woff'),
+       url('assets/fonts/AGRANDIR.ttf') format('truetype');
 }
