@@ -13,84 +13,85 @@
   <body>
     <!-- Nav -->
     <nav
-      class="header fixed w-full bg-asset border border-gray-100 md:border-none z-50"
+    class="header fixed w-full bg-asset border border-gray-100 md:border-none z-50"
+  >
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3 sm:mx-20 md:py-4 sm:px-6 lg:mx-44 xl:mx-52"
     >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3 sm:mx-20 md:py-4 sm:px-6 lg:mx-44 xl:mx-52"
+      <a
+        href="#"
+        class="links0 flex items-center space-x-3 rtl:space-x-reverse"
       >
-        <a
-          href="#"
-          class="links0 flex items-center space-x-3 rtl:space-x-reverse"
+        <span
+          class="self-center text-2xl font-agrandir-wide font-extrabold whitespace-nowrap text-amber-950"
+          >QilzMi</span
         >
-          <span
-            class="self-center text-2xl font-agrandir-wide font-extrabold whitespace-nowrap text-amber-950"
-            >QilzMi</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 transition-all duration-150" 
-          aria-controls="navbar-default"
-          aria-expanded="false"
+      </a>
+      <button
+        data-collapse-toggle="navbar-custom"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 transition-all duration-150"
+        aria-controls="navbar-custom"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
         >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5 "
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div
-          class="hidden w-full md:block md:w-auto duration-500 ease-in-out overflow-hidden transition-all"
-          id="navbar-default"
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+      <div
+        id="navbar-custom"
+        class="hidden w-full md:block md:w-auto duration-500 ease-in-out overflow-hidden transition-all"
+      >
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-asset"
         >
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-asset"
-          >
-            <li>
-              <a
-                href="#home"
-                class="links block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded md:bg-transparent -700 md:p-0"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#aboutMe"
-                class="links2 block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:hover:transition-all md:hover:duration-300 md:p-0"
-                >About Me</a
-              >
-            </li>
-            <li>
-              <a
-                href="#services"
-                class="links5 block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:hover:transition-all md:hover:duration-300 md:p-0"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="links3 block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:hover:transition-all md:hover:duration-300 md:p-0"
-                >Projects</a
-              >
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="#home"
+              class="links nav-link-custom block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded md:bg-transparent -700 md:p-0"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#aboutMe"
+              class="links2 nav-link-custom block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="links5 nav-link-custom block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="links3 nav-link-custom block py-2 px-3 font-agrandir-wide font-semibold text-amber-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0"
+              >Projects</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  
     <!-- End of Nav -->
 
     <!-- Home page -->
