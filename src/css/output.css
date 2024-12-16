@@ -1025,7 +1025,7 @@ video {
 }
 
 .font-agrandir-wide{
-  font-family: AGRANDIR;
+  font-family: AGRANDIR, sans-serif;
 }
 
 .font-poppins{
@@ -1169,7 +1169,9 @@ video {
 @font-face {
   font-family: 'AGRANDIR-wide';
 
-  src: url('assets/fonts/AGRANDIR.ttf');
+  src: url('assets/fonts/AGRANDIR.woff2') format('woff2'),
+         url('assets/fonts/AGRANDIR.woff') format('woff'),
+         url('assets/fonts/AGRANDIR.ttf') format('truetype');
 }
 
 @media (max-width: 768px) {
