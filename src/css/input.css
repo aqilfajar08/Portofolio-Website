@@ -13,21 +13,20 @@
 
 @media (max-width: 768px) {
     #navbar-default {
-      max-height: 0; /* Awal tertutup */
+      max-height: 0;
       transition: max-height 0.5s ease, opacity 0.5s ease;
     }
   
     #navbar-default.hidden {
-      opacity: 0; /* Saat tertutup */
+      opacity: 0;
       max-height: 0;
     }
   
     #navbar-default.show {
-      opacity: 1; /* Saat terbuka */
-      max-height: 500px; /* Ketinggian maksimal navbar */
+      opacity: 1;
+      max-height: 500px;
     }
   
-    /* Untuk link yang diklik */
     .nav-link-click {
       animation: link-click-fade 0.5s ease-in-out;
     }
