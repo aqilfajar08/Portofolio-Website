@@ -1025,7 +1025,7 @@ video {
 }
 
 .font-agrandir-wide{
-  font-family: AGRANDIR-wide;
+  font-family: AGRANDIR;
 }
 
 .font-poppins{
@@ -1142,6 +1142,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-\[max-height\]{
+  transition-property: max-height;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1163,9 +1169,46 @@ video {
 @font-face {
   font-family: 'AGRANDIR-wide';
 
-  src: url('assets/fonts/AGRANDIR.woff2') format('woff2'),
-       url('assets/fonts/AGRANDIR.woff') format('woff'),
-       url('assets/fonts/AGRANDIR.ttf') format('truetype');
+  src: url('assets/fonts/AGRANDIR.ttf');
+}
+
+@media (max-width: 768px) {
+  #navbar-default {
+    max-height: 0;
+    /* Awal tertutup */
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  #navbar-default.hidden {
+    opacity: 0;
+    /* Saat tertutup */
+    max-height: 0;
+  }
+
+  #navbar-default.show {
+    opacity: 1;
+    /* Saat terbuka */
+    max-height: 500px;
+    /* Ketinggian maksimal navbar */
+  }
+
+  /* Untuk link yang diklik */
+
+  .nav-link-click {
+    animation: link-click-fade 0.5s ease-in-out;
+  }
+
+  @keyframes link-click-fade {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    to {
+      opacity: 0.7;
+      transform: scale(0.95);
+    }
+  }
 }
 
 .hover\:border-white\/20:hover{
@@ -1433,6 +1476,16 @@ video {
   .md\:hover\:font-semibold:hover{
     font-weight: 600;
   }
+
+  .md\:hover\:transition-all:hover{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .md\:hover\:duration-300:hover{
+    transition-duration: 300ms;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1613,4 +1666,4 @@ video {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity, 1));
   }
-}
+}  

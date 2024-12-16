@@ -12,7 +12,7 @@ module.exports = {
         'tablet2': '1298px',
       },
       fontFamily: {
-        'agrandir-wide': ['AGRANDIR-wide'],
+        'agrandir-wide': ['AGRANDIR'],
         'poppins': ['Poppins'],
       },
       colors: {
